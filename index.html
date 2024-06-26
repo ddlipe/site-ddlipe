@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    
+
+    <title>DD LIPE Desentupidora & Dedetizadora</title>
+    <meta name="description" content="Desentupidora e dedetizadora 24 horas em Sorocaba e região.">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/180x180.png">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="DD LIPE Desentupidora & Dedetizadora">
+    <meta property="og:description" content="Desentupidora e dedetizadora 24 horas em Sorocaba e região.">
+    <meta property="og:url" content="http://ddlipedesentupidora.com.br">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DD LIPE Desentupidora & Dedetizadora">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="./assets/imgs/ddlipe-visuals/desktop.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="478">
+    <meta property="og:image:height" content="500">
+
+    <meta name="twitter:title" content="DD LIPE Desentupidora & Dedetizadora">
+    <meta name="twitter:description" content="Desentupidora e dedetizadora 24 horas em Sorocaba e região.">
+    <meta name="twitter:domain" content="ddlipedesentupidora.com.br">
+    <meta name="twitter:image:src" content="./assets/imgs/ddlipe-visuals/desktop.webp">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "DD LIPE Desentupidora & Dedetizadora",
+        "url": "http://www.ddlipedesentupidora.com.br",
+        "logo": "http://www.ddlipedesentupidora.com.br/assets/logo.webp",
+        "image": "http://www.ddlipedesentupidora.com.br/assets/imgs/ddlipe-visuals/desktop.webp",
+        "description": "Desentupidora e dedetizadora 24 horas em Sorocaba e região. Oferecemos soluções rápidas e eficazes para todos os seus problemas de entupimento e pragas.",
+        "telephone": "+551234567890",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Exemplo, 123",
+          "addressLocality": "Sorocaba",
+          "addressRegion": "SP",
+          "postalCode": "18000-000",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "23.501530",
+          "longitude": "-47.452594"
+        },
+        "openingHours": "Mo,Tu,We,Th,Fr 24h",
+        "areaServed": {
+          "@type": "City",
+          "name": "Sorocaba e região"
+        },
+        "serviceArea": {
+          "@type": "State",
+          "name": "São Paulo"
+        }
+      }
+      </script>      
+
+      <style>
+        /* local fonts */
+        @font-face {
+          font-family: 'Poppins';
+          src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+          font-weight: 700;
+        }
+
+        @font-face {
+          font-family: 'Poppins';
+          src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+          font-weight: 600;
+        }
+
+        @font-face {
+          font-family: 'Mulish';
+          src: url('./assets/fonts/Mulish-Regular.ttf') format('truetype');
+          font-weight: 400;
+        }
+
+
+        /* css variables */
+
+        :root {
+          --background-color-primary: #4C6FB1;
+          --background-color-secondary: #264190;
+
+          --text-color-primary: #2D2D2D;
+          --text-color-secondary: #264190;
+
+          --border-color-primary: #E5F4F2;
+
+          --black: #000;
+          --white: #fff;
+        }
+
+        /* css resets */
+
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        html {
+          width: 100vw;
+          height: 100vh;
+
+          font-size: 62.5%;
+
+          background-color: #F8F9FF;
+        }
+
+        body {
+          width: 100%;
+          height: 100%;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        /* navbar */
+
+        .navbar {
+          width: 100%;
+          max-width: 128rem;
+          height: 10rem;
+
+          padding: 2rem 5rem;
+          margin: 0 auto;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .navbar__nav {
+          display: flex;
+          align-items: center;
+          gap: 5rem;
+        }
+
+        .navbar__primary-cta {
+          width: fit-content;
+          height: 6rem;
+
+          padding: 1.6rem 5rem;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: .8rem;
+
+          border: none;
+          border-radius: 2rem;
+
+          background-color: var(--background-color-primary);
+
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: #fff;
+
+          cursor: pointer;
+        }
+
+        @media (max-width: 1279px) {
+          .navbar {
+            max-width: 74.4rem;
+            
+            padding: 2rem 4.8rem;
+          }
+        }
+
+        @media (max-width: 779px) {
+          .navbar {
+            height: 7.2rem;
+
+            justify-content: center;
+          }
+
+          .navbar__primary-cta {
+            display: none;
+          } 
+        }
+
+        /* hero-section */
+
+        .hero-section {
+          width: 100%;
+          max-width: 128rem;
+
+          display: flex;
+          justify-content: space-between;
+          
+          padding: 12rem 5.5rem;
+          margin: 0 auto;
+        }
+
+        .hero-section__header {
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+        }
+
+        .hero-section__headings {
+          width: 64.8rem;
+
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        .hero-section__headline {
+          font-family: 'Poppins';
+          font-weight: 700;
+          font-size: 5.5rem;
+          line-height: 130%;
+          letter-spacing: -2.5%;
+          text-align: left;
+          vertical-align: top;
+          color: #2D2D2D;
+        }
+
+        .hero-section__subheading {
+          font-family: 'Mulish';
+          font-weight: 400;
+          font-size: 2.1rem;
+          line-height: 150%;
+          text-align: left;
+          vertical-align: top;
+          color: #2D2D2D;
+        }
+
+        .hero-section__subheading--highlighted {
+          color: #3366FF;
+        }
+
+        .hero-section__ctas {
+          width: fit-content;
+
+          display: flex;  
+          gap: 1.8rem;
+        }
+
+        .hero-section__primary-cta {
+          width: fit-content;
+          height: 6rem;
+
+          display: flex;
+          align-items: center;
+          gap: .8rem;
+
+          padding: 1.6rem 5rem;
+
+          border: none;
+          border-radius: 2rem;
+
+          background-color: var(--background-color-primary);
+
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          text-align: center;
+          color: #fff;
+
+          cursor: pointer;
+        }
+
+        .hero-section__primary-cta-icon {
+          filter: brightness(0) invert(1);
+        }
+
+        @media (max-width: 1279px) {
+          .hero-section {
+            max-width: 74.4rem;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+
+            padding: 10rem 3.2rem;
+          }
+
+          .hero-section__headline {
+            text-align: center;
+          }
+
+          .hero-section__subheading {
+            text-align: center;
+          }
+
+          .hero-section__ctas {
+            margin: 0 auto;
+          }
+
+          .hero-section__secondary-cta {
+            display: none;
+          }
+        }
+
+        @media (max-width: 779px) {
+          .hero-section {
+            max-width: 37.5rem;
+
+            flex-direction: column;
+            padding: 6rem 3rem;
+          }
+
+          .hero-section__headings {
+            width: 100%;
+          }
+
+          .hero-section__headline {
+            font-size: 3.8rem;
+          }
+
+          .hero-section__subheading {
+            font-size: 1.6rem;
+          }
+        }
+      </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <img src="./assets/logo.webp" width="130px" height="60px" alt="logo da empresa DD LIPE Desentupidora e Dedetizadora">
+
+      <nav class="navbar__nav">
+        <a class="navbar__primary-cta" href="https://wa.me/+5515998511076?text=Ol%C3%A1%2C%0A%0AGostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.%20Vim%20at%C3%A9%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20estou%20interessado%20em%20entender%20como%20podem%20me%20ajudar.%0A%0AObrigado%21" target="_blank">
+          <img src="./assets/icons/whatsapp-icon.svg" width="20px" height="20px" alt="icone do WhatsApp">
+
+          WhatsApp
+        </a>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-section__header">
+        <div class="hero-section__headings">
+          <h1 class="hero-section__headline">
+            Desentupidora & Dedetizadora em Sorocaba – Soluções Rápidas 24hrs!
+          </h1>
+
+          <p class="hero-section__subheading">
+            Soluções completas em desentupimento, dedetização e limpeza para garantir seu conforto e segurança. Atendimento ágil e eficiente em toda a região de Sorocaba.
+          </p>
+
+          <div class="hero-section__ctas">
+            <a class="hero-section__primary-cta" href="https://wa.me/+5515998511076?Ol%Ol%C3%A1%2C%0A%0AGostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.%20Vim%20at%C3%A9%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20estou%20interessado%20em%20entender%20como%20podem%20me%20ajudar.%0A%0AObrigado%21" target="_blank">
+              Agendar Visita
+              
+              <img src="./assets/icons/right-arrow.svg" width="20px" height="20px" alt="seta apontando para direita" class="hero-section__primary-cta-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <picture>
+        <source media="(max-width: 1279px)" srcset="./assets/imgs/ddlipe-visuals-mobile.webp">
+
+        <img src="./assets/imgs/ddlipe-visuals-desktop.webp" alt="decoração mostrando os serviços prestados pela empresa DD LIPE junto do logo da empresa">
+      </picture>
+    </section>
+
+    <section class="about">
+      <div class="about__card">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="./assets/imgs/smiling-plumber-mobile.webp" class="about__card-visuals">
+
+          <img src="./assets/imgs/smiling-plumber-desktop.webp" alt="desentupidor sorrindo" class="about__card-visuals">
+        </picture>
+        
+        <div class="about__headings">
+          <p class="about__headline">
+            A <span class="about__headline--bold">DD LIPE</span> é referência em desentupimento, dedetização e limpeza de fossas e caixa de gordura em Sorocaba, oferecendo soluções rápidas para entupimentos e pragas, 24 horas por dia.
+          </p>
+
+          <p class="about__headline">
+            Comprometida com sua segurança e satisfação, nossa equipe garante ambientes saudáveis e atendimento emergencial eficaz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="regions-of-operation">
+      <div class="regions-of-operation__headings">
+        <h2 class="regions-of-operation__headline">Serviços Abrangentes em Áreas:</h2>
+
+        <p class="regions-of-operation__subheading">Atendendo com excelência a cada necessidade, em qualquer lugar de Sorocaba e região.</p>
+      </div>
+
+      <div class="regions-of-operation__cards">
+        <div class="regions-of-operation__card">
+          <picture>
+            <source media="(max-width: 779px)" srcset="./assets/imgs/comercial-area-mobile.webp">
+
+            <img src="./assets/imgs/comercial-area-desktop.webp" alt="dedetizador trabalhando em uma empresa">
+          </picture>
+
+          <div class="regions-of-operation__card-headings">
+            <h3 class="regions-of-operation__card-headline">Empresarial</h3>
+
+            <p class="regions-of-operation__card-subheading">Serviços empresariais completos para desentupimento, dedetização e limpeza, assegurando ambientes de trabalho saudáveis e produtivos.</p>
+          </div>
+        </div>
+
+        <div class="regions-of-operation__card">
+          <picture>
+            <source media="(max-width: 779px)" srcset="./assets/imgs/residencial-area-mobile.webp">
+
+            <img src="./assets/imgs/residencial-area-desktop.webp" alt="dedetizador trabalhando em uma residencia">
+          </picture>
+
+
+          <div class="regions-of-operation__card-headings">
+            <h3 class="regions-of-operation__card-headline">Residencial</h3>
+
+            <p class="regions-of-operation__card-subheading">Serviços residenciais que mantêm seu lar livre de pragas e entupimentos, promovendo conforto e segurança em Sorocaba e região.</p>
+          </div>
+        </div>
+
+        <div class="regions-of-operation__card">
+          <picture>
+            <source media="(max-width: 779px)" srcset="./assets/imgs/rural-area-mobile.webp">
+
+            <img src="./assets/imgs/rural-area-desktop.webp" alt="dedetizador trabalhando em região rural">
+          </picture>
+
+          <div class="regions-of-operation__card-headings">
+            <h3 class="regions-of-operation__card-headline">Rural</h3>
+
+            <p class="regions-of-operation__card-subheading">Soluções adaptadas para o campo, focadas em desentupimento e controle de pragas em áreas rurais, garantindo eficiência e durabilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="differentials">
+      <div class="differentials__headings">
+        <h2 class="differentials__headline">Nossos diferenciais incluem:</h2>
+      </div>
+
+      <div class="differentials__cards">
+        <div class="differentials__card">
+          <img src="./assets/icons/24hours.svg" alt="atendimento 24 horas por dia" width="82px" height="82px">
+
+          <div class="differentials__card-headings">
+            <h3 class="differentials__card-headline">Atendimento 24/7</h3>
+
+            <p class="differentials__card-subheading">Estamos disponíveis dia e noite para garantir assistência imediata em casos de urgência.</p>
+          </div>
+        </div>
+
+        <div class="differentials__card">
+          <img src="./assets/icons/qualified-team.svg" alt="time qualificado" width="82px" height="82px">
+
+          <div class="differentials__card-headings">
+            <h3 class="differentials__card-headline">Equipe Qualificada</h3>
+
+            <p class="differentials__card-subheading">Profissionais experientes e constantemente treinados para lidar com qualquer desafio.</p>
+          </div>
+        </div>
+
+        <div class="differentials__card">
+          <img src="./assets/icons/custom-service.svg" alt="serviço customizado" width="82px" height="82px">
+
+          <div class="differentials__card-headings">
+            <h3 class="differentials__card-headline">Personalização de Serviço</h3>
+
+            <p class="differentials__card-subheading">Planos de ação desenvolvidos especificamente para atender às necessidades individuais de cada cliente.</p>
+          </div>
+        </div>
+
+        <div class="differentials__card">
+          <img src="./assets/icons/high-tech.svg" alt="tecnologia avançada" width="82px" height="82px">
+
+          <div class="differentials__card-headings">
+            <h3 class="differentials__card-headline">Tecnologia Avançada</h3>
+
+            <p class="differentials__card-subheading">Utilizamos equipamentos de última geração e técnicas inovadoras para desentupimento e dedetização.</p>
+          </div>
+        </div>
+        
+        <div class="differentials__card">
+          <img src="./assets/icons/eco-friendly.svg" alt="rural visuals decoration" width="82px" height="82px">
+
+          <div class="differentials__card-headings">
+            <h3 class="differentials__card-headline">Soluções Sustentáveis</h3>
+
+            <p class="differentials__card-subheading">Compromisso com métodos eco-friendly, assegurando a segurança de todos e a proteção ao meio ambiente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlighted-cta">
+      <div class="highlighted-cta__card">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="./assets/imgs/pest-control-smiling-mobile.webp" class="highlighted-cta__visuals">
+
+          <img src="./assets/imgs/pest-control-smiling-desktop.webp" alt="dedetizador sorrindo" class="highlighted-cta__visuals">
+        </picture>
+
+        <div class="highlighted-cta__header">
+          <div class="highlighted-cta__headings">
+            <h2 class="highlighted-cta__headline">
+              Resolva Já Seus Problemas!
+            </h2>
+
+            <p class="highlighted-cta__subheading">
+              Contate a DD LIPE para serviços rápidos e eficientes de desentupimento e dedetização. 
+            </p>
+          </div>
+
+          <a class="highlighted-cta__cta" href="https://wa.me/+5515998511076?text=Ol%C3%A1%2C%0A%0AGostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.%20Vim%20at%C3%A9%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20estou%20interessado%20em%20entender%20como%20podem%20me%20ajudar.%0A%0AObrigado%21" target="_blank">
+            Agendar Visita
+
+            <img src="./assets/icons/right-arrow.svg" width="20px" height="20px" alt="icone de seta para direita">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-list">
+      <picture>
+        <source media="(max-width: 779px)" srcset="./assets/imgs/plumber-working-mobile.webp">
+
+        <img src="./assets/imgs/plumber-working-desktop.webp" alt="homem desentupindo vaso sanitário">
+      </picture>
+
+      <div class="services-list__info">
+        <div class="services-list__headings">
+          <h2 class="services-list__headline">
+            Serviços Profissionais de Desentupimento
+          </h2>
+
+          <p class="services-list__subheading">
+            Resolvendo com eficiência todos os seus problemas de entupimento em Sorocaba e região.
+          </p>
+        </div>
+
+        <div class="services-list__cards">
+          <div class="services-list__card">
+            <img src="./assets/icons/vaso-sanitario-icon.svg" width="50px" height="50px" alt="icone de vaso sanitário">
+
+            <h3 class="services-list__card-headline">Vaso Sanitário</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/pia-icon.svg" width="50px" height="50px" alt="icone de pia">
+            <h3 class="services-list__card-headline">Pia</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/tanque-icon.svg" width="50px" height="50px" alt="icone de tanque de lavar roupa">
+            <h3 class="services-list__card-headline">Tanque</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/ralo-icon.svg" width="50px" height="50px" alt="icone de ralo">
+            <h3 class="services-list__card-headline">Ralo</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-list services-list--reverse">
+      <picture>
+        <source media="(max-width: 779px)" srcset="./assets/imgs/pest-control-working-mobile.webp">
+
+        <img src="./assets/imgs/pest-control-working-desktop.webp" alt="homem dedetizando arbusto">
+      </picture>
+
+      <div class="services-list__info">
+        <div class="services-list__headings">
+          <h2 class="services-list__headline">
+            Soluções Completas em Dedetização
+          </h2>
+
+          <p class="services-list__subheading">
+            Proteção eficaz contra pragas para sua casa ou empresa em Sorocaba e arredores.
+          </p>
+        </div>
+
+        <div class="services-list__cards">
+          <div class="services-list__card">
+            <img src="./assets/icons/roedores-icon.svg" width="50px" height="50px" alt="icone de roedores">
+            <h3 class="services-list__card-headline">Roedores</span>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/pragas-icon.svg" width="50px" height="50px" alt="icone de praga">
+            <h3 class="services-list__card-headline">Pragas</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/insetos-icon.svg" width="50px" height="50px" alt="icone de inseto">
+            <h3 class="services-list__card-headline">Insetos</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/peconhentos-icon.svg" width="50px" height="50px" alt="icone de peçonhentos">
+            <h3 class="services-list__card-headline">Peçonhentos</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-list">
+      <picture>
+        <source media="(max-width: 779px)" srcset="./assets/imgs/cleaner-working-mobile.webp">
+
+        <img src="./assets/imgs/cleaner-working-desktop.webp" alt="service cleaning visuals decoration">
+      </picture>
+
+      <div class="services-list__info">
+        <div class="services-list__headings">
+          <h2 class="services-list__headline">
+            Limpeza Especializada e de Qualidade
+          </h2>
+
+          <p class="services-list__subheading">
+            Serviços profissionais para manutenção e limpeza de sistemas de esgoto em Sorocaba, focados em eficiência e confiabilidade.
+          </p>
+        </div>
+
+        <div class="services-list__cards">
+          <div class="services-list__card">
+            <img src="./assets/icons/esgoto-icon.svg" width="50px" height="50px" alt="icone de esgoto">
+            <h3 class="services-list__card-headline">Esgoto</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/caixa-gordura-icon.svg" width="50px" height="50px" alt="icone de caixa de gordura">
+            <h3 class="services-list__card-headline">Caixa Gordura</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/fossa-icon.svg" width="50px" height="50px" alt="icone de fossa">
+            <h3 class="services-list__card-headline">Fossa</h3>
+          </div>
+
+          <div class="services-list__card">
+            <img src="./assets/icons/galeria-icon.svg" width="50px" height="50px" alt="icone de galeria galeria">
+            <h3 class="services-list__card-headline">Galeria</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlighted-cta">
+      <div class="highlighted-cta__card highlighted-cta__card--reverse">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="./assets/imgs/pest-control-smiling-mobile.webp" class="highlighted-cta__visuals highlighted-cta__visuals--reverse">
+
+          <img src="./assets/imgs/pest-control-smiling-desktop.webp" alt="dedetizador sorrindo" class="highlighted-cta__visuals highlighted-cta__visuals--reverse">
+        </picture>
+
+        <div class="highlighted-cta__header">
+          <div class="highlighted-cta__headings">
+            <h2 class="highlighted-cta__headline">
+              Resolva Já Seus Problemas!
+            </h2>
+
+            <p class="highlighted-cta__subheading">
+              Contate a DD LIPE para serviços rápidos e eficientes de desentupimento e dedetização. 
+            </p>
+          </div>
+
+          <a class="highlighted-cta__cta" href="https://wa.me/+5515998511076?text=Ol%C3%A1%2C%0A%0AGostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.%20Vim%20at%C3%A9%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20estou%20interessado%20em%20entender%20como%20podem%20me%20ajudar.%0A%0AObrigado%21" target="_blank">
+            Agendar Visita
+
+            <img src="./assets/icons/right-arrow.svg" width="20px" height="20px" alt="icone de seta para direita">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="./assets/icons/ddlipe-icon.svg" width="44.67px" height="60px" alt="DDLIPE logo">
+
+          <h3 class="footer__company-name">
+            <span class="footer__company-name--highlighted">DDLIPE</span> Desentupidora em Sorocaba.
+          </h3>
+        </div>
+
+        <div class="footer__contact">
+          <a class="footer__phone-container" href="https://wa.me/+5515998511076?text=Ol%C3%A1%2C%0A%0AGostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.%20Vim%20at%C3%A9%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20estou%20interessado%20em%20entender%20como%20podem%20me%20ajudar.%0A%0AObrigado%21" target="_blank">
+            <img src="./assets/icons/whatsapp-icon.svg" width="32px" height="32px" alt="icone do WhatsApp">
+            <h2 class="footer__phone-number">(15) 99851-1076</h2>
+          </a>
+
+          <div class="footer__location">
+            <img src="./assets/icons/location.svg" alt="Localização">
+
+            <p class="footer__region">
+              Rua Natal, 302 - Jardim Paulistano, Sorocaba - SP, 18040-810
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
